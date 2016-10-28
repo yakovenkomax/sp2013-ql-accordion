@@ -1,0 +1,57 @@
+/*!
+ * SharePoint 2013 Quick Launch accordion
+ * version: 1.0 (2014/07/17)
+ * 
+ * Copyright (c) 2014 Yakovenko Max, yakovenkomax.com, yakovenkomax@outlook.com
+ *
+ * Released under the MIT License
+ */
+
+/* Default menu levels 3+ padding */
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > .ms-core-listMenu-item { padding-left: 60px; }
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > .ms-core-listMenu-item { padding-left: 80px; }
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > .ms-core-listMenu-item { padding-left: 100px; }
+
+/* Switch level 2+ padding */
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > .switch {	padding-left: 20px; }
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > .switch { padding-left: 40px; }
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > .switch { padding-left: 60px; }
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > ul.static > li.static > .switch { padding-left: 80px; }
+
+/* Collapsed and expanded levels */
+.ms-core-listMenu-verticalBox li ul {
+	height: 0;
+	overflow: hidden;
+}
+.ms-core-listMenu-verticalBox li.expanded > ul {
+	height: auto;
+}
+
+/* Switch styles */
+.switch {
+	float: left;
+	width: 20px;
+	height: 25px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.switch span {
+	display: block;
+	width: 10px;
+	height: 15px;
+	margin:	5px;
+	overflow: hidden;
+}
+.switch img {
+	position: relative;
+	left: -254px;
+	top: -184px;
+}
+.expanded > .switch img{
+	left: -254px;
+	top: -144px;
+}
